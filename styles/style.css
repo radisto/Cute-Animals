@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+#wrapper {
+    background-color: lightgray;
+}
+
+.picture-container {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    line-height: 300px;
+    text-align: center;
+}
+
+.picture {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.picture:hover {
+    cursor: pointer;
+}
+
+#hover {
+    display: none;
+}
