@@ -4,16 +4,30 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="images/cat.png" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css" />
     <title>Cute Animals</title>
 </head>
 
 <body>
 
+    <header>
+        <a href="#/grid">
+            <span class="icon">
+                <i class="fa fa-th fa-fw"></i>Grid
+            </span>
+        </a>
+        <a href="#/single">
+            <span class="icon">
+                <i class="fa fa-square fa-fw"></i>Single
+            </span>
+        </a>
+    </header>
+
     <div id="hover"></div>
     <div id="wrapper"></div>
 
-    <script id="template" type="text/x-handlebars-template">
+    <script id="grid-template" type="text/x-handlebars-template">
         {{#results}}
         <div class="picture-container">
             <img class="picture" src="{{url}}">
@@ -21,8 +35,17 @@
         {{/results}}
     </script>
 
+    <script id="single-template" type="text/x-handlebars-template">
+        {{#results}}
+        <div class="image-container">
+            <img class="image" src="{{url}}">
+        </div>
+        {{/results}}
+    </script>
+
     <script src="scripts/libs/jquery-2.1.4.min.js"></script>
-    <script src="scripts/libs/handlebars-v3.0.3.js"></script>
+    <script src="scripts/libs/sammy.min.js"></script>
+    <script src="scripts/libs/mustache.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>

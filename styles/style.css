@@ -1,9 +1,7 @@
 body {
-    margin: 0;
-}
-
-#wrapper {
     background-color: lightgray;
+    margin: 0;
+    padding-bottom: 400px;
 }
 
 .picture-container {
@@ -14,7 +12,6 @@ body {
     overflow: hidden;
     text-align: center;
     line-height: 300px;
-    text-align: center;
 }
 
 .picture {
@@ -28,6 +25,35 @@ body {
     cursor: pointer;
 }
 
+.image-container {
+    width: 800px;
+    height: 600px;
+    text-align: center;
+    line-height: 600px;
+    margin: 50px auto;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
 #hover {
     display: none;
+}
+
+header {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+.icon {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
 }
