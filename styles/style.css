@@ -1,52 +1,149 @@
+@font-face {
+    font-family: Colonna;
+    src: url(../fonts/colonna.ttf);
+}
+
 body {
     background-color: lightgray;
     margin: 0;
-    padding-bottom: 400px;
-}
-
-.picture-container {
-    width: 400px;
-    height: 300px;
-    margin: 20px;
-    display: inline-block;
-    overflow: hidden;
-    text-align: center;
-    line-height: 300px;
-}
-
-.picture {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    vertical-align: middle;
-}
-
-.picture:hover {
-    cursor: pointer;
-}
-
-.image-container {
-    width: 800px;
-    height: 600px;
-    text-align: center;
-    line-height: 600px;
-    margin: 50px auto;
-}
-
-.image {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    vertical-align: middle;
-}
-
-#hover {
-    display: none;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 header {
     border-bottom: 1px solid gray;
-    padding: 5px;
+    font-family: Colonna;
+    text-align: center;
+    font-size: 80px;
+    line-height: 75px;
+    height: 60px;
+    letter-spacing: 20px;
+    word-spacing: 20px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        font-size: 60px;
+        letter-spacing: 10px;
+        word-spacing: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 40px;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+    }
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.image-container {
+    display: table;
+    margin: 50px auto;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 600px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.like-and-share {
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.likes {
+    float: left;
+}
+
+.shares {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.shares li {
+    padding: 3px 0 3px 12px;
+    display: block;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    background-color: lightgray;
+    text-align: left;
+}
+
+.shares li > span:nth-child(1) {
+    font-size: 22px;
+}
+
+.shares li > span:nth-child(2) {
+    font-size: 18px;
+}
+
+.shares ul {
+    border-left: 2px solid orange;
+    border-bottom: 2px solid orange;
+    border-right: 2px solid orange;
+}
+
+.shares li:hover {
+    background-color: rgb(175, 175, 175);
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15%;
+    display: none;
+    margin: 0;
+    list-style: none;
+    width: 130%;
+    padding: 0;
+}
+
+.shares:hover .dropdown-menu {
+    display: block;
+}
+
+.likes > span:nth-child(2), .dropdown > span:nth-child(2) {
+    color: rgb(50, 50, 50);
+    font-size: 22px;
+}
+
+.like, .dropdown > span:nth-child(1) {
+    color: gray;
+    font-size: 32px;
+}
+
+.like-clone {
+    color: darkred;
+    font-size: 32px;
+}
+
+.like:hover, .dropdown:hover > span:nth-child(1), .dropdown:hover > span:nth-child(2) {
+    cursor: pointer;
+    color: orange;
 }
 
 .icon {
@@ -54,6 +151,26 @@ header {
     margin: 0 10px;
 }
 
-a {
-    text-decoration: none;
+.facebook {
+    color: rgb(60, 90, 150);
+}
+
+.twitter {
+    color: rgb(85, 170, 240);
+}
+
+.googleplus {
+    color: rgb(215, 65, 65);
+}
+
+.tumblr {
+    color: rgb(50, 65, 85);
+}
+
+.pinterest {
+    color: rgb(205, 30, 40);
+}
+
+.linkedin {
+    color: rgb(0, 120, 180);
 }

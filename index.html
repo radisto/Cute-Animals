@@ -12,39 +12,80 @@
 <body>
 
     <header>
-        <a href="#/grid">
-            <span class="icon">
-                <i class="fa fa-th fa-fw"></i>Grid
-            </span>
-        </a>
-        <a href="#/single">
-            <span class="icon">
-                <i class="fa fa-square fa-fw"></i>Single
-            </span>
-        </a>
+        <span>
+            <span class="red">C</span><span class="blue">U</span><span class="green">T</span><span class="yellow">E</span>
+            <span> </span>
+            <span class="red">A</span><span class="blue">N</span><span class="green">I</span><span class="yellow">M</span><span class="red">A</span><span class="blue">L</span><span class="green">S</span>
+        </span>
     </header>
 
-    <div id="hover"></div>
     <div id="wrapper"></div>
 
-    <script id="grid-template" type="text/x-handlebars-template">
-        {{#results}}
-        <div class="picture-container">
-            <img class="picture" src="{{url}}">
-        </div>
-        {{/results}}
-    </script>
-
-    <script id="single-template" type="text/x-handlebars-template">
+    <script id="template" type="text/x-handlebars-template">
         {{#results}}
         <div class="image-container">
             <img class="image" src="{{url}}">
+            <div class="like-and-share">
+                <span class="likes">
+                    <span class="like">
+                        <i class="fa fa-heart fa-fw"></i>
+                    </span>
+                    <span>
+                        <span class="likes-count">{{likes}}</span> Likes
+                    </span>
+                </span>
+                <span class="shares">
+                    <span class="dropdown">
+                        <span>
+                            <i class="fa fa-share-alt fa-fw"></i>
+                        </span>
+                        <span>Share</span>
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <span class="facebook">
+                                <i class="fa fa-facebook-square fa-fw"></i>
+                            </span>
+                            <span>Facebook</span>
+                        </li>
+                        <li>
+                            <span class="twitter">
+                                <i class="fa fa-twitter-square fa-fw"></i>
+                            </span>
+                            <span>Twitter</span>
+                        </li>
+                        <li>
+                            <span class="googleplus">
+                                <i class="fa fa-google-plus-square fa-fw"></i>
+                            </span>
+                            <span>Google+</span>
+                        </li>
+                        <li>
+                            <span class="tumblr">
+                                <i class="fa fa-tumblr-square fa-fw"></i>
+                            </span>
+                            <span>tumblr.</span>
+                        </li>
+                        <li>
+                            <span class="pinterest">
+                                <i class="fa fa-pinterest-square fa-fw"></i>
+                            </span>
+                            <span>Pinterest</span>
+                        </li>
+                        <li>
+                            <span class="linkedin">
+                                <i class="fa fa-linkedin-square fa-fw"></i>
+                            </span>
+                            <span>LinkedIn</span>
+                        </li>
+                    </ul>
+                </span>
+            </div>
         </div>
         {{/results}}
     </script>
 
     <script src="scripts/libs/jquery-2.1.4.min.js"></script>
-    <script src="scripts/libs/sammy.min.js"></script>
     <script src="scripts/libs/mustache.min.js"></script>
     <script src="scripts/main.js"></script>
 
